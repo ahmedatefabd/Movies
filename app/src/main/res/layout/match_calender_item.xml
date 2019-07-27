@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<data>
+    <variable
+        name="movie"
+        type="com.c1ctech.androiddagger2example.model.Movie" />
+
+    <variable
+        name="itemClick"
+        type="com.c1ctech.androiddagger2example.util.CustomClickListener" />
+</data>
+
+<LinearLayout
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="@{() -> itemClick.cardClicked(movie)}"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image_item_movie"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:layout_margin="1dp"
+        app:imageUrl="@{movie.posterPath}"
+        tools:src="@drawable/ic_launcher_background" />
+
+</LinearLayout>
+</layout>
