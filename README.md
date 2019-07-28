@@ -75,6 +75,15 @@ Room provides an abstraction layer over SQLite to allow fluent database access w
 
 --------------------------------
 
-![image](https://i.imgur.com/xr4nzpD.png)   ![image](https://i.imgur.com/p3RZayW.png)
+![image](https://i.imgur.com/xr4nzpD.png)
+
+--------------------------------
+
+![image](https://i.imgur.com/p3RZayW.png)
+
+
+--------------------------------
+
+![image](https://i.imgur.com/X3NXR7p.png)
 
 
