@@ -1,9 +1,6 @@
 package com.c1ctech.androiddagger2example.room_db;
-
 import android.content.Context;
-
 import com.c1ctech.androiddagger2example.model_db.Movie_DB;
-
 import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
@@ -17,9 +14,7 @@ public abstract class RoomDataBase extends RoomDatabase {
     public RoomDataBase() {
     }
 
-    //Single ton
     public static RoomDatabase getInstance(Context context) {
-
         if (instance == null) {
             synchronized (RoomDataBase.class) {
                 if (instance == null) {

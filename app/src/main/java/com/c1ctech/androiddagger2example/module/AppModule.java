@@ -4,12 +4,11 @@ import javax.inject.Singleton;
 import dagger.Module;
 import dagger.Provides;
 
-@Module //created for return Application = Context
+@Module
 public class AppModule {
 
     private Application mApplication;
 
-    //Constructor
     public AppModule(Application mApplication) {
         this.mApplication = mApplication;
     }
@@ -19,5 +18,4 @@ public class AppModule {
     Application getApplication() {
         return mApplication;
     }
-
 }

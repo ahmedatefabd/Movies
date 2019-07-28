@@ -5,20 +5,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 import androidx.databinding.DataBindingUtil;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import com.c1ctech.androiddagger2example.R;
 import com.c1ctech.androiddagger2example.adapter.MovieAdapter;
 import com.c1ctech.androiddagger2example.app.MyApplication;
 import com.c1ctech.androiddagger2example.databinding.ActivityMainBinding;
 import com.c1ctech.androiddagger2example.model.Movie;
-import com.c1ctech.androiddagger2example.model.ResponseMovie;
 import com.c1ctech.androiddagger2example.viewmodel.MovieViewModel;
 import java.util.List;
 import javax.inject.Inject;
 import retrofit2.Retrofit;
 
-public class MainActivity extends AppCompatActivity {
+public class MovieActivity extends AppCompatActivity {
     @Inject
     Retrofit retrofit;
     @Inject
@@ -39,29 +37,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void observableChanges() {
-        movieViewModel.movieList.observe(this, new Observer<ResponseMovie>() {
-                    @Override
-                    public void onChanged(ResponseMovie responseMovie) {
-                        Recycler(responseMovie.getMovies());
-                    }
-                }
-        );
+        movieViewModel.movieList.observe(this, responseMovie -> Recycler(responseMovie.getMovies()));
 
-        movieViewModel.errorMessage.observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(String s) {
-                Toast.makeText(MainActivity.this, s, Toast.LENGTH_LONG).show();
-            }
-        });
+        movieViewModel.errorMessage.observe(this, s -> Toast.makeText(MovieActivity.this, s, Toast.LENGTH_LONG).show());
 
-        movieViewModel.showLoadingProg.observe(this, new Observer<Boolean>() {
-            @Override
-            public void onChanged(Boolean show) {
-                if (show)
-                    showLoadingBar();
-                else
-                    hideLoadingBar();
-            }
+        movieViewModel.showLoadingProg.observe(this, show -> {
+            if (show)
+                showLoadingBar();
+            else
+                hideLoadingBar();
         });
     }
 
@@ -74,6 +58,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void Recycler(List<Movie> movies) {
-        binding.setAdapter(new MovieAdapter(movies, MainActivity.this));
+        binding.setAdapter(new MovieAdapter(movies, MovieActivity.this));
     }
 }

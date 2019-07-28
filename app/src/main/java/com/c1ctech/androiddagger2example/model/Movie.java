@@ -57,7 +57,6 @@ public class Movie implements Parcelable {
     @Expose
     private String releaseDate;
 
-
     public Movie(Parcel in) {
         voteCount = in.readInt();
         id = in.readInt();
@@ -201,8 +200,6 @@ public class Movie implements Parcelable {
     public void setReleaseDate(String releaseDate) {
         this.releaseDate = releaseDate;
     }
-
-
 
     @Override
     public int describeContents() {

@@ -1,17 +1,11 @@
 package com.c1ctech.androiddagger2example.viewmodel;
-
 import android.content.Context;
-
 import com.c1ctech.androiddagger2example.model.ResponseMovie;
 import com.c1ctech.androiddagger2example.repository.MovieRepository;
 import com.c1ctech.androiddagger2example.util.Connection;
 import com.c1ctech.androiddagger2example.util.Constant;
-import com.c1ctech.androiddagger2example.view.MainActivity;
-
 import java.util.HashMap;
 import java.util.Map;
-
-import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 

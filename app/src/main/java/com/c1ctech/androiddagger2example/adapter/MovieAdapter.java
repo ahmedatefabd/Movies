@@ -2,16 +2,13 @@ package com.c1ctech.androiddagger2example.adapter;
 import android.content.Context;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
-import android.widget.Toast;
 import com.c1ctech.androiddagger2example.R;
 import com.c1ctech.androiddagger2example.databinding.MatchCalenderItemBinding;
 import com.c1ctech.androiddagger2example.model.Movie;
 import com.c1ctech.androiddagger2example.view.DetailseActivity;
-
 import java.util.List;
 
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHolder> {

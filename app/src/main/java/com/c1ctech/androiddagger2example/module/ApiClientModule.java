@@ -5,12 +5,11 @@ import dagger.Provides;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-@Module //created for return new Retrofit.Builder()
+@Module
 public class ApiClientModule {
 
     public final String BASE_URL;
 
-    //Constructor
     public ApiClientModule(String url) {
         this.BASE_URL = url;
     }
