@@ -27,8 +27,14 @@ http://api.themoviedb.org/3/movie/popular?api_key=[YOUR_API_KEY]
 
 --------------------------------
 ## Features
+##### 1- DataBinding 
+##### 2- ViewModel
+##### 3- LiveData
+##### 4- Dagger2
+##### 5- Retrofit
+##### 6- Room
 
-### 1-DataBinding [tutorial](https://developer.android.com/topic/libraries/data-binding)
+### 1- DataBinding [tutorial](https://developer.android.com/topic/libraries/data-binding)
 
 The Data Binding Library is a support library that allows you to bind UI components in your layouts to data sources in your app using a declarative format rather than programmatically.
 
@@ -72,7 +78,7 @@ Room provides an abstraction layer over SQLite to allow fluent database access w
 
 --------------------------------
 
-## Screenshot
+# Screenshot
 
 ![image](https://i.imgur.com/xr4nzpD.png)
 
