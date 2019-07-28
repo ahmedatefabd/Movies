@@ -68,13 +68,14 @@ On This branch we will develop the first one and develop the second feature on L
 
 ## 7- Room Branch [tutorial](https://developer.android.com/training/data-storage/room/index.html)
 
+![image](https://i.imgur.com/xr4nzpD.png)
 
+![image](https://i.imgur.com/p3RZayW.png)
 
-![screenshot_main](https://i.imgur.com/xr4nzpD.png)
-![screenshot_navi](https://i.imgur.com/p3RZayW.png)
-![screenshot_swipe](https://i.imgur.com/p3RZayW.png)
-![screenshot_settings](https://i.imgur.com/xr4nzpD.png)
-![screenshot_from_date](https://i.imgur.com/p3RZayW.png)
-![screenshot_color_theme](https://i.imgur.com/xr4nzpD.png)
-![screenshot_sky_blue_medium](https://i.imgur.com/p3RZayW.png)
-![screenshot_green_large](https://i.imgur.com/xr4nzpD.png)
+![image](https://i.imgur.com/xr4nzpD.png)
+
+![image](https://i.imgur.com/p3RZayW.png)
+
+![image](https://i.imgur.com/xr4nzpD.png)
+
+![image](https://i.imgur.com/p3RZayW.png)
