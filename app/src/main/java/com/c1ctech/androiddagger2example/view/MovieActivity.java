@@ -32,7 +32,7 @@ public class MovieActivity extends AppCompatActivity {
         ((MyApplication) getApplication()).getComponent().inject(this);
         binding.setLifecycleOwner(this);
         movieViewModel = ViewModelProviders.of(this).get(MovieViewModel.class);
-        movieViewModel.getMovies(this);
+        movieViewModel.getMovies();
         observableChanges();
     }
 
