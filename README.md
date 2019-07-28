@@ -1,7 +1,6 @@
 # Movies App
 
-Simple Movies app , I will apply every architecture component on a separate branch with steps
-(Any beginner can follow me to learn all architecture component)
+Simple Movies app , I will apply every architecture component on a separate branch with steps.
 
 -----------------------
 
