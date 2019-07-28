@@ -26,9 +26,9 @@ Once you obtain your key, you append it to your HTTP request as a URL parameter 
 http://api.themoviedb.org/3/movie/popular?api_key=[YOUR_API_KEY]
 
 --------------------------------
-### Features
+## Features
 
-##   1-DataBinding [tutorial](https://developer.android.com/topic/libraries/data-binding)
+### 1-DataBinding [tutorial](https://developer.android.com/topic/libraries/data-binding)
 
 The Data Binding Library is a support library that allows you to bind UI components in your layouts to data sources in your app using a declarative format rather than programmatically.
 
@@ -37,7 +37,7 @@ and DataBindingRseult Branch contain the final result without ToDo
 
 --------------------------------
 
-## 2- ViewModel [tutorial](https://developer.android.com/topic/libraries/architecture/viewmodel)
+### 2- ViewModel [tutorial](https://developer.android.com/topic/libraries/architecture/viewmodel)
 
 - The ViewModel class is designed to separate out view data ownership from UI controller logic.
 - The ViewModel class allows data to survive configuration changes such as screen rotations using LiveDate.
@@ -46,19 +46,19 @@ On This branch we will develop the first one and develop the second feature on L
 
 --------------------------------
 
-## 3- LiveData [tutorial](https://developer.android.com/topic/libraries/architecture/livedata)
+### 3- LiveData [tutorial](https://developer.android.com/topic/libraries/architecture/livedata)
 
 is an observable data holder class. Unlike a regular observable, LiveData is lifecycle-aware, meaning it respects the lifecycle of other app components, such as activities, fragments, or services. This awareness ensures LiveData only updates app component observers that are in an active lifecycle state.
 
 --------------------------------
 
-## 4- Dagger2 [tutorial](https://dagger.dev/)
+### 4- Dagger2 [tutorial](https://dagger.dev/)
 
 Dagger is a fully static, compile-time dependency injection framework for both Java and Android. It is an adaptation of an earlier version created by Square and now maintained by Google.
 
 --------------------------------
 
-## 5- Retrofit [tutorial](https://square.github.io/retrofit/)
+### 5- Retrofit [tutorial](https://square.github.io/retrofit/)
 
 Type-safe HTTP client for Android and Java by Square, Inc.
 
@@ -66,11 +66,13 @@ For more information please see [the website](https://square.github.io/retrofit/
 
 --------------------------------
 
-## 6- Room [tutorial](https://developer.android.com/training/data-storage/room/index.html)
+### 6- Room [tutorial](https://developer.android.com/training/data-storage/room/index.html)
 
 Room provides an abstraction layer over SQLite to allow fluent database access while harnessing the full power of SQLite.
 
 --------------------------------
+
+## Screenshot
 
 ![image](https://i.imgur.com/xr4nzpD.png)
 
