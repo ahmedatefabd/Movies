@@ -11,8 +11,15 @@ If you don’t already have an account, you will need to [create one](https://ww
    
 In your request for a key, state that your usage will be for educational/non-commercial use. You will also need to provide some personal information to complete the request. Once you submit your request, you should receive your key via email shortly after.
 
-After generate your API key put it inside string.xml file 
-<string name="api_key" translatable="false">[YOUR_API_KEY]</string>
+--------------------------------
+
+### API Key Note
+You need to insert your API key.
+Go to a file named `Constants.java` and find the value of API_KEY.
+Replace "test" with "YOUR-API-KEY".
+```
+public static final String API_KEY = "YOUR-API-KEY";
+```
     
 In order to request popular movies you will want to request data from the /movie/popular [documentation](https://developers.themoviedb.org/3/discover/movie-discover). An API Key is required.
 Once you obtain your key, you append it to your HTTP request as a URL parameter like so:
