@@ -33,6 +33,7 @@ http://api.themoviedb.org/3/movie/popular?api_key=[YOUR_API_KEY]
 ##### 4- Dagger2
 ##### 5- Retrofit
 ##### 6- Room
+##### 7- Android Architecture Components
 
 --------------------------------
 
@@ -77,6 +78,12 @@ For more information please see [the website](https://square.github.io/retrofit/
 ### 6- Room [tutorial](https://developer.android.com/training/data-storage/room/index.html)
 
 Room provides an abstraction layer over SQLite to allow fluent database access while harnessing the full power of SQLite.
+
+--------------------------------
+
+### 7- Android Architecture Components [tutorial](https://developer.android.com/topic/libraries/architecture)
+
+Android architecture components are a collection of libraries that help you design robust, testable, and maintainable apps. Start with classes for managing your UI component lifecycle and handling data persistence.
 
 --------------------------------
 
