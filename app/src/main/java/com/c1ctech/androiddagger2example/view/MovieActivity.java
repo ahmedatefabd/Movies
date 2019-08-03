@@ -1,6 +1,8 @@
 package com.c1ctech.androiddagger2example.view;
 import android.app.Application;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -23,6 +25,7 @@ public class MovieActivity extends AppCompatActivity {
     Application application;
     private ActivityMainBinding binding;
     private MovieViewModel movieViewModel;
+    public static ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +36,12 @@ public class MovieActivity extends AppCompatActivity {
         binding.setLifecycleOwner(this);
         movieViewModel = ViewModelProviders.of(this).get(MovieViewModel.class);
         movieViewModel.getMovies();
+
+        progressDialog = new ProgressDialog(this);
+        progressDialog.setTitle("Loading");
+        progressDialog.setCancelable(false);
+        progressDialog.show();
+//        showLoadingBar();
         observableChanges();
     }
 
@@ -41,20 +50,20 @@ public class MovieActivity extends AppCompatActivity {
 
         movieViewModel.errorMessage.observe(this, s -> Toast.makeText(MovieActivity.this, s, Toast.LENGTH_LONG).show());
 
-        movieViewModel.showLoadingProg.observe(this, show -> {
-            if (show)
-                showLoadingBar();
-            else
-                hideLoadingBar();
-        });
+//        movieViewModel.showLoadingProg.observe(this, show -> {
+//            if (show)
+//                showLoadingBar();
+//            else
+//                hideLoadingBar();
+//        });
     }
 
     private void showLoadingBar() {
-        binding.loadignBar.setVisibility(View.VISIBLE);
+        progressDialog.show();
     }
 
     private void hideLoadingBar() {
-        binding.loadignBar.setVisibility(View.INVISIBLE);
+        progressDialog.show();
     }
 
     private void Recycler(List<Movie> movies) {

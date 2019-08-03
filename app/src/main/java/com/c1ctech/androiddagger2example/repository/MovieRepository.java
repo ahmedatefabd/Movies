@@ -11,6 +11,8 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 
+import static com.c1ctech.androiddagger2example.view.MovieActivity.progressDialog;
+
 public class MovieRepository {
     @Inject
     Retrofit retrofit;
@@ -36,12 +38,14 @@ public class MovieRepository {
         apiInterface.getMovies(stringMap).enqueue(new Callback<ResponseMovie>() {
             @Override
             public void onResponse(Call<ResponseMovie> call, Response<ResponseMovie> response) {
+                progressDialog.dismiss();
                 if (response.isSuccessful()){
                     responseMovieMutableLiveData.setValue(response.body());
                 }
             }
             @Override
             public void onFailure(Call<ResponseMovie> call, Throwable t) {
+                progressDialog.dismiss();
                 responseMovieMutableLiveData.setValue(null);
             }
         });
